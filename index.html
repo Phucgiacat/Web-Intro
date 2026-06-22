@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo AI — Trợ lý AI thông minh cho người Việt</title>
+  <meta name="description" content="Nền tảng AI đa mô hình thông minh nhất Việt Nam. Kết hợp Gemini, Llama và GPT. Dùng thử miễn phí." />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Fonts: Satoshi + Geist -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">
+        <div class="logo-mask">NEO AI</div>
+      </a>
+
+      <div class="nav__links">
+        <a href="#features" class="nav__link" data-i18n="navFeatures">Tính năng</a>
+        <a href="#models" class="nav__link" data-i18n="navModels">Mô hình AI</a>
+        <a href="#pricing" class="nav__link" data-i18n="navPricing">Bảng giá</a>
+        <a href="#demo" class="nav__link" data-i18n="navDemo">Demo</a>
+      </div>
+
+      <div class="nav__actions">
+        <div class="lang-toggle">
+          <button class="lang-toggle__btn active" data-lang="vi">VI</button>
+          <button class="lang-toggle__btn" data-lang="en">EN</button>
+        </div>
+        <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary btn--small" data-i18n="navCta">Dùng thử</a>
+      </div>
+
+      <button class="nav__burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#features" data-i18n="navFeatures">Tính năng</a>
+    <a href="#models" data-i18n="navModels">Mô hình AI</a>
+    <a href="#demo" data-i18n="navDemo">Demo</a>
+    <a href="#pricing" data-i18n="navPricing">Bảng giá</a>
+    <a href="#about" data-i18n="navAbout">Về chúng tôi</a>
+    <a href="#demo" data-i18n="navDemo">Demo</a>
+    <div class="lang-toggle" style="margin-top: 1rem;">
+      <button class="lang-toggle__btn active" data-lang="vi">VI</button>
+      <button class="lang-toggle__btn" data-lang="en">EN</button>
+    </div>
+    <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary" data-i18n="navCta">Dùng thử</a>
+  </div>
+
+  <!-- ═══ 3D FLAG BACKGROUND ═══ -->
+  <div id="flag-container"></div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__eyebrow-dot"></span>
+        <span data-i18n="heroEyebrow">Trợ lý AI thế hệ mới</span>
+      </div>
+
+      <h1 class="hero__title reveal reveal--delay-1">
+        <span data-i18n="heroTitle1">Sức mạnh AI,</span><br>
+        <em data-i18n="heroTitleEm">trí tuệ Việt Nam</em>
+      </h1>
+
+      <div class="hero__subtitle-wrapper reveal reveal--delay-2">
+        <p class="hero__subtitle" data-i18n="heroSubtitle">
+          Nền tảng AI đa mô hình thông minh nhất — kết hợp Gemini, Llama và GPT để mang đến câu trả lời chính xác, nhanh chóng.
+        </p>
+      </div>
+
+      <div class="hero__actions reveal reveal--delay-3">
+        <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary btn--large" data-i18n="heroBtnPrimary">Bắt đầu miễn phí</a>
+        <a href="#demo" class="btn btn--secondary btn--large" data-i18n="heroBtnSecondary">Xem demo</a>
+      </div>
+
+      <div class="hero__stats reveal reveal--delay-4">
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-value="10+" data-i18n="stat1Value">10+</div>
+          <div class="hero__stat-label" data-i18n="stat1Label">Mô hình AI</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-value="3" data-i18n="stat2Value">3</div>
+          <div class="hero__stat-label" data-i18n="stat2Label">Chế độ thông minh</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-value="24/7" data-i18n="stat3Value">24/7</div>
+          <div class="hero__stat-label" data-i18n="stat3Label">Luôn sẵn sàng</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-value="∞" data-i18n="stat4Value">∞</div>
+          <div class="hero__stat-label" data-i18n="stat4Label">Khả năng</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" data-i18n="featuresLabel">Tính năng</div>
+        <h2 class="section-title" data-i18n="featuresTitle">Mọi thứ bạn cần, trong một nền tảng</h2>
+        <p class="section-desc" style="margin-inline: auto;" data-i18n="featuresDesc">Neo AI không chỉ là chatbot — đó là hệ sinh thái AI hoàn chỉnh cho mọi nhu cầu.</p>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-block reveal">
+          <div class="feature-block__icon">🤖</div>
+          <h3 class="feature-block__title" data-i18n="feat1Title">Đa mô hình AI</h3>
+          <p class="feature-block__desc" data-i18n="feat1Desc">Chuyển đổi linh hoạt giữa Gemini, Llama, GPT và nhiều mô hình khác. Mỗi câu hỏi được xử lý bởi mô hình phù hợp nhất.</p>
+        </div>
+        <div class="feature-block reveal reveal--delay-1">
+          <div class="feature-block__icon">⚡</div>
+          <h3 class="feature-block__title" data-i18n="feat2Title">3 chế độ thông minh</h3>
+          <p class="feature-block__desc" data-i18n="feat2Desc">Basic cho câu hỏi nhanh, Pro cho phân tích chuyên sâu, Expert với 3-Tier Engine mạnh nhất cho kết quả tối ưu.</p>
+        </div>
+        <div class="feature-block reveal reveal--delay-2">
+          <div class="feature-block__icon">🔍</div>
+          <h3 class="feature-block__title" data-i18n="feat3Title">Tìm kiếm thời gian thực</h3>
+          <p class="feature-block__desc" data-i18n="feat3Desc">Kết hợp dữ liệu web mới nhất với tri thức AI, mang đến câu trả lời luôn cập nhật và chính xác.</p>
+        </div>
+        <div class="feature-block reveal">
+          <div class="feature-block__icon">📸</div>
+          <h3 class="feature-block__title" data-i18n="feat4Title">Nhận diện hình ảnh</h3>
+          <p class="feature-block__desc" data-i18n="feat4Desc">Upload ảnh và nhận phân tích chi tiết. Hỗ trợ mô hình Vision AI tiên tiến nhất.</p>
+        </div>
+        <div class="feature-block reveal reveal--delay-1">
+          <div class="feature-block__icon">🇻🇳</div>
+          <h3 class="feature-block__title" data-i18n="feat5Title">Giao diện Việt hóa</h3>
+          <p class="feature-block__desc" data-i18n="feat5Desc">Thiết kế hoàn toàn bằng tiếng Việt, tối ưu cho người dùng Việt Nam với trải nghiệm mượt mà.</p>
+        </div>
+        <div class="feature-block reveal reveal--delay-2">
+          <div class="feature-block__icon">🔒</div>
+          <h3 class="feature-block__title" data-i18n="feat6Title">Bảo mật & Riêng tư</h3>
+          <p class="feature-block__desc" data-i18n="feat6Desc">Dữ liệu được mã hóa, lịch sử chat an toàn, không chia sẻ với bên thứ ba.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MODELS ═══ -->
+  <section class="models" id="models">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" data-i18n="modelsLabel">Mô hình AI</div>
+        <h2 class="section-title" data-i18n="modelsTitle">Hệ sinh thái đa mô hình</h2>
+        <p class="section-desc" style="margin-inline: auto;" data-i18n="modelsDesc">Truy cập các mô hình AI hàng đầu thế giới trong một nền tảng duy nhất.</p>
+      </div>
+
+      <div class="models__grid">
+        <div class="model-card reveal">
+          <div class="model-card__logo">✦</div>
+          <div class="model-card__info">
+            <div class="model-card__name">Gemini 2.5 Flash</div>
+            <div class="model-card__provider">Google DeepMind</div>
+          </div>
+          <div class="model-card__badge model-card__badge--free">Free</div>
+        </div>
+        <div class="model-card reveal reveal--delay-1">
+          <div class="model-card__logo">✦</div>
+          <div class="model-card__info">
+            <div class="model-card__name">Gemini 3.5 Flash</div>
+            <div class="model-card__provider">Google DeepMind</div>
+          </div>
+          <div class="model-card__badge model-card__badge--free">Free</div>
+        </div>
+        <div class="model-card reveal reveal--delay-2">
+          <div class="model-card__logo">🦙</div>
+          <div class="model-card__info">
+            <div class="model-card__name">Llama 4 Scout 17B</div>
+            <div class="model-card__provider">Meta AI</div>
+          </div>
+          <div class="model-card__badge model-card__badge--free">Free</div>
+        </div>
+        <div class="model-card reveal">
+          <div class="model-card__logo">🦙</div>
+          <div class="model-card__info">
+            <div class="model-card__name">Llama 3.3 70B</div>
+            <div class="model-card__provider">Meta AI</div>
+          </div>
+          <div class="model-card__badge">Pro</div>
+        </div>
+        <div class="model-card reveal reveal--delay-1">
+          <div class="model-card__logo">✦</div>
+          <div class="model-card__info">
+            <div class="model-card__name">Gemini 2.5 Pro</div>
+            <div class="model-card__provider">Google DeepMind</div>
+          </div>
+          <div class="model-card__badge">Pro</div>
+        </div>
+        <div class="model-card reveal reveal--delay-2">
+          <div class="model-card__logo">◉</div>
+          <div class="model-card__info">
+            <div class="model-card__name">GPT-4.1 Mini</div>
+            <div class="model-card__provider">OpenAI</div>
+          </div>
+          <div class="model-card__badge">Pro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DEMO ═══ -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" data-i18n="demoLabel">Trải nghiệm</div>
+        <h2 class="section-title" data-i18n="demoTitle">Xem Neo AI hoạt động</h2>
+        <p class="section-desc" style="margin-inline: auto;" data-i18n="demoDesc">Giao diện trực quan, phản hồi tức thì, hỗ trợ đa ngôn ngữ.</p>
+      </div>
+
+      <div class="demo__window reveal" id="demo-window">
+        <div class="demo__glow"></div>
+        <div class="demo__titlebar">
+          <div class="demo__dot demo__dot--red"></div>
+          <div class="demo__dot demo__dot--yellow"></div>
+          <div class="demo__dot demo__dot--green"></div>
+          <div class="demo__url">neo-project.onrender.com</div>
+        </div>
+        <div class="demo__screen" id="demo-screen">
+          <!-- Interactive Iframe -->
+          <iframe src="https://neo-project.onrender.com/" frameborder="0" title="Neo AI Demo" loading="lazy"></iframe>
+          
+          <div class="demo__overlay" id="demo-overlay">
+            <svg width="48" height="48" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="8" fill="#DA251D"/>
+              <path d="M20 8l3.09 9.51h10l-8.09 5.88 3.09 9.51L20 27.02l-8.09 5.88 3.09-9.51-8.09-5.88h10z" fill="#FFCD00"/>
+            </svg>
+            <span data-i18n="demoClickToPlay">Bấm để tương tác trực tiếp</span>
+            <button class="btn btn--primary btn--small" style="margin-top: 10px;">Play Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRICING ═══ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" data-i18n="pricingLabel">Bảng giá</div>
+        <h2 class="section-title" data-i18n="pricingTitle">Chọn gói phù hợp</h2>
+        <p class="section-desc" style="margin-inline: auto;" data-i18n="pricingDesc">Bắt đầu miễn phí, nâng cấp khi cần.</p>
+      </div>
+
+      <div class="pricing__grid">
+        <!-- Basic -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card__name" data-i18n="priceFreeName">Basic</div>
+          <div class="pricing-card__price" data-i18n="priceFree">Miễn phí</div>
+          <p class="pricing-card__desc" data-i18n="priceFreeDesc">Hoàn hảo để bắt đầu khám phá AI</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="priceFeat1">Gemini Flash & Llama 8B</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="priceFeat2">Giới hạn 50 tin/ngày</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="priceFeat3">Lịch sử chat cơ bản</span>
+            </div>
+          </div>
+          <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--secondary" style="width: 100%;" data-i18n="priceFreeBtn">Bắt đầu ngay</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="pricing-card reveal reveal--delay-1">
+          <div class="pricing-card__name" data-i18n="priceProName">Pro</div>
+          <div class="pricing-card__price"><span data-i18n="priceProPrice">99K</span> <span data-i18n="priceProUnit">/tháng</span></div>
+          <p class="pricing-card__desc" data-i18n="priceProDesc">Cho người dùng chuyên nghiệp</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="proFeat1">Tất cả mô hình Pro</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="proFeat2">500 tin nhắn/ngày</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="proFeat3">Tìm kiếm thời gian thực</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="proFeat4">Vision AI</span>
+            </div>
+          </div>
+          <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary" style="width: 100%;" data-i18n="priceProBtn">Nâng cấp Pro</a>
+        </div>
+
+        <!-- Expert -->
+        <div class="pricing-card pricing-card--featured reveal reveal--delay-2">
+          <div class="pricing-card__badge" data-i18n="priceExpertBadge">Phổ biến nhất</div>
+          <div class="pricing-card__name" data-i18n="priceExpertName">Expert</div>
+          <div class="pricing-card__price"><span data-i18n="priceExpertPrice">199K</span> <span data-i18n="priceExpertUnit">/tháng</span></div>
+          <p class="pricing-card__desc" data-i18n="priceExpertDesc">Sức mạnh AI tối đa, không giới hạn</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="expertFeat1">Tất cả mô hình + Expert</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="expertFeat2">Không giới hạn tin nhắn</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="expertFeat3">3-Tier Engine</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="expertFeat4">API access</span>
+            </div>
+            <div class="pricing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="expertFeat5">Hỗ trợ ưu tiên</span>
+            </div>
+          </div>
+          <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary" style="width: 100%;" data-i18n="priceExpertBtn">Nâng cấp Expert</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT US ═══ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__card reveal">
+        <div class="about__glow"></div>
+        <div class="about__content">
+          <div class="section-label" data-i18n="aboutLabel">Về chúng tôi</div>
+          <h2 class="about__title" data-i18n="aboutTitle">CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</h2>
+          
+          <div class="about__info-grid">
+            <div class="about__info-item">
+              <span class="about__icon">👤</span>
+              <div>
+                <div class="about__info-label" data-i18n="aboutCeoLabel">Giám đốc (CEO)</div>
+                <div class="about__info-value" data-i18n="aboutCeoName">Đỗ Văn Trung</div>
+              </div>
+            </div>
+            <div class="about__info-item">
+              <span class="about__icon">📍</span>
+              <div>
+                <div class="about__info-label" data-i18n="aboutAddressLabel">Trụ sở chính</div>
+                <div class="about__info-value" data-i18n="aboutAddress">Số nhà 9 - Tổ 8 - Khu 1, Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng Ninh, Việt Nam.</div>
+              </div>
+            </div>
+            <div class="about__info-item">
+              <span class="about__icon">🌟</span>
+              <div>
+                <div class="about__info-label" data-i18n="aboutMissionLabel">Sứ mệnh</div>
+                <div class="about__info-value" data-i18n="aboutMission">Mang trí tuệ nhân tạo tiên tiến nhất đến với mọi cá nhân và doanh nghiệp Việt Nam.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA FINAL ═══ -->
+  <section class="cta-final">
+    <div class="container text-center">
+      <h2 class="cta-final__title reveal" data-i18n="ctaTitle">Sẵn sàng trải nghiệm AI?</h2>
+      <p class="cta-final__desc reveal reveal--delay-1" data-i18n="ctaDesc">Tham gia cùng hàng nghìn người dùng Việt Nam đang sử dụng Neo AI mỗi ngày.</p>
+      <a href="https://neo-project.onrender.com/" target="_blank" class="btn btn--primary btn--large reveal reveal--delay-2" data-i18n="ctaBtn">Dùng thử Neo AI miễn phí</a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <a href="#hero" class="nav__logo" style="margin-bottom: var(--space-sm);">
+            <svg class="nav__logo-icon" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="8" fill="#DA251D"/>
+              <path d="M20 8l3.09 9.51h10l-8.09 5.88 3.09 9.51L20 27.02l-8.09 5.88 3.09-9.51-8.09-5.88h10z" fill="#FFCD00"/>
+            </svg>
+            <span>Neo AI</span>
+          </a>
+          <p class="footer__brand-desc" data-i18n="footerDesc">Nền tảng AI đa mô hình, thiết kế cho người Việt.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title" data-i18n="footerProduct">Sản phẩm</div>
+          <a href="#features" data-i18n="navFeatures">Tính năng</a>
+          <a href="#models" data-i18n="navModels">Mô hình AI</a>
+          <a href="#pricing" data-i18n="navPricing">Bảng giá</a>
+          <a href="#demo" data-i18n="navDemo">Demo</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title" data-i18n="footerCompany">Về chúng tôi</div>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title" data-i18n="footerSupport">Hỗ trợ</div>
+          <a href="#">FAQ</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footerCopy">© 2025 Neo AI. Mọi quyền được bảo lưu.</span>
+        <span data-i18n="footerMadeWith">Được tạo với ❤️ tại Việt Nam</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
