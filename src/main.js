@@ -257,14 +257,33 @@ function initInteractiveDemo() {
   });
 }
 
-// ─── Smooth Scroll for Anchor Links ───
+// ─── SPA Tab Navigation ───
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
+      const targetId = link.getAttribute('href');
+      const target = document.querySelector(targetId);
+      
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // If the target is a content section, show it and hide others
+        if (target.classList.contains('content-section')) {
+          document.querySelectorAll('.content-section').forEach(sec => {
+            sec.classList.remove('active-section');
+          });
+          target.classList.add('active-section');
+        } else if (targetId === '#hero') {
+          // If clicking home/logo, hide all sections
+          document.querySelectorAll('.content-section').forEach(sec => {
+            sec.classList.remove('active-section');
+          });
+        }
+
+        // Wait a tiny bit for the display:block to take effect before scrolling
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+
         // Close mobile menu if open
         document.querySelector('.mobile-menu')?.classList.remove('open');
         document.querySelector('.nav__burger')?.classList.remove('open');
