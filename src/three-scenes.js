@@ -21,7 +21,7 @@ export function initMultiScenes() {
     'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2500&q=80', // Ha Long Bay (Features)
     'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=2500&q=80', // Hoi An (Models)
     'https://images.unsplash.com/photo-1557750255-c76072a7aad1?auto=format&fit=crop&w=2500&q=80', // Ninh Binh / Nature (Demo)
-    'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=2500&q=80', // Da Nang (Pricing)
+    'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=2500&q=80', // Ho Chi Minh City Skyline (Pricing)
     'https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&w=2500&q=80'  // Sapa Terraces (About)
   ];
 
