@@ -15,7 +15,11 @@
 
 /* ─── Section Spacing ─── */
 section {
-  padding-block: var(--space-3xl);
+  min-height: 100vh; /* Make each section exactly one screen tall */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: var(--space-xl); /* Reduced padding to fit 100vh */
   position: relative;
 }
 
@@ -111,5 +115,5 @@ section {
 }
 
 .section-header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg); /* Reduced margin for 100vh fit */
 }

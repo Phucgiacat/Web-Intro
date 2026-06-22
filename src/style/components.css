@@ -380,7 +380,7 @@
 
 /* ─── Pricing Card ─── */
 .pricing-card {
-  padding: var(--space-xl);
+  padding: var(--space-lg); /* Reduced padding */
   background: rgba(20, 10, 10, 0.45);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -432,10 +432,10 @@
 }
 
 .pricing-card__price {
-  font-size: var(--text-4xl);
+  font-size: clamp(2rem, 4vw, 3rem); /* Responsive smaller price font */
   font-weight: 800;
   color: var(--ink);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 2px;
 }
 
 .pricing-card__price span {
@@ -447,14 +447,14 @@
 .pricing-card__desc {
   color: var(--ink-muted);
   font-size: var(--text-sm);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md); /* Reduced margin */
 }
 
 .pricing-card__features {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-xl);
+  gap: var(--space-xs); /* Reduced gap */
+  margin-bottom: var(--space-lg); /* Reduced margin */
 }
 
 .pricing-card__feature {
