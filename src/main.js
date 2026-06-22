@@ -291,14 +291,42 @@ function initCounterAnimation() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const finalText = el.dataset.value;
-        el.textContent = finalText;
+        const finalStr = el.dataset.value;
+        const finalNum = parseInt(finalStr.replace(/[^0-9]/g, ''), 10);
+        const suffix = finalStr.replace(/[0-9]/g, '');
+        
+        if (!isNaN(finalNum)) {
+          let currentNum = 0;
+          const duration = 1500;
+          const stepTime = 30;
+          const steps = duration / stepTime;
+          const increment = Math.ceil(finalNum / steps);
+          
+          const interval = setInterval(() => {
+            currentNum += increment;
+            if (currentNum >= finalNum) {
+              currentNum = finalNum;
+              clearInterval(interval);
+            }
+            el.textContent = currentNum + suffix;
+          }, stepTime);
+        } else {
+          el.textContent = finalStr;
+        }
         observer.unobserve(el);
       }
     });
   }, { threshold: 0.5 });
 
-  document.querySelectorAll('[data-value]').forEach(el => observer.observe(el));
+  document.querySelectorAll('[data-value]').forEach(el => {
+    const finalStr = el.dataset.value;
+    const finalNum = parseInt(finalStr.replace(/[^0-9]/g, ''), 10);
+    if (!isNaN(finalNum)) {
+      const suffix = finalStr.replace(/[0-9]/g, '');
+      el.textContent = '0' + suffix;
+    }
+    observer.observe(el);
+  });
 }
 
 // ─── Init ───
