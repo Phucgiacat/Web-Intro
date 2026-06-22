@@ -451,7 +451,7 @@
 
 .pricing-card__desc {
   color: var(--ink-muted);
-  font-size: var(--text-sm);
+  font-size: var(--text-base); /* Increased font size */
   margin-bottom: var(--space-md); /* Reduced margin */
 }
 
@@ -466,7 +466,7 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-xs);
-  font-size: var(--text-sm);
+  font-size: var(--text-base); /* Increased font size */
   color: var(--ink-muted);
 }
 
