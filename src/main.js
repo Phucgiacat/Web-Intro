@@ -292,10 +292,11 @@ function initCounterAnimation() {
       if (entry.isIntersecting) {
         const el = entry.target;
         const finalStr = el.dataset.value;
-        const finalNum = parseInt(finalStr.replace(/[^0-9]/g, ''), 10);
-        const suffix = finalStr.replace(/[0-9]/g, '');
+        const match = finalStr.match(/^(\d+)(.*)$/);
         
-        if (!isNaN(finalNum)) {
+        if (match) {
+          const finalNum = parseInt(match[1], 10);
+          const suffix = match[2];
           let currentNum = 0;
           const duration = 1500;
           const stepTime = 30;
@@ -320,10 +321,9 @@ function initCounterAnimation() {
 
   document.querySelectorAll('[data-value]').forEach(el => {
     const finalStr = el.dataset.value;
-    const finalNum = parseInt(finalStr.replace(/[^0-9]/g, ''), 10);
-    if (!isNaN(finalNum)) {
-      const suffix = finalStr.replace(/[0-9]/g, '');
-      el.textContent = '0' + suffix;
+    const match = finalStr.match(/^(\d+)(.*)$/);
+    if (match) {
+      el.textContent = '0' + match[2];
     }
     observer.observe(el);
   });
