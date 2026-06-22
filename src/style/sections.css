@@ -444,6 +444,9 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeOut 0.3s ease forwards;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 .content-section.active-section {

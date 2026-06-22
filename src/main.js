@@ -272,17 +272,10 @@ function initSmoothScroll() {
             sec.classList.remove('active-section');
           });
           target.classList.add('active-section');
-        } else if (targetId === '#hero') {
-          // If clicking home/logo, hide all sections
-          document.querySelectorAll('.content-section').forEach(sec => {
-            sec.classList.remove('active-section');
-          });
         }
 
-        // Wait a tiny bit for the display:block to take effect before scrolling
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 50);
+        // Jump to top instantly, acting like a new page load
+        window.scrollTo(0, 0);
 
         // Close mobile menu if open
         document.querySelector('.mobile-menu')?.classList.remove('open');
