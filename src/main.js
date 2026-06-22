@@ -3,7 +3,7 @@ import './style/base.css';
 import './style/layout.css';
 import './style/components.css';
 import './style/sections.css';
-import { initFlagBackground } from './three-flag.js';
+import { initMultiScenes } from './three-scenes.js';
 
 // ─── i18n ───
 const translations = {
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initInteractiveDemo();
   initMobileMenu();
-  initFlagBackground();
+  initMultiScenes();
   initScrollReveal();
   initCounterAnimation();
 

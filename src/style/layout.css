@@ -72,6 +72,19 @@ section {
 .text-muted { color: var(--ink-muted); }
 .text-faint { color: var(--ink-faint); }
 
+.model-card__name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.model-card__provider {
+  font-size: var(--text-xs);
+  color: oklch(0.9 0 0);
+}
+
 .section-label {
   font-size: var(--text-sm);
   font-weight: 600;
@@ -82,14 +95,19 @@ section {
 }
 
 .section-title {
+  font-size: var(--text-4xl);
+  font-weight: 800;
   margin-bottom: var(--space-md);
+  color: #ffffff; /* Bright white */
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
 .section-desc {
-  color: var(--ink-muted);
   font-size: var(--text-lg);
-  max-width: 50ch;
-  line-height: 1.7;
+  color: oklch(0.9 0 0); /* Lighter gray/white */
+  max-width: 54ch;
+  line-height: 1.6;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .section-header {
