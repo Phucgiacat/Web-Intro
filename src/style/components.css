@@ -337,14 +337,22 @@
 }
 
 .model-card__logo {
-  width: 40px;
-  height: 40px;
+  width: 48px; /* Increased to fit the 3D icons better */
+  height: 48px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   flex-shrink: 0;
+}
+
+.model-card__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: screen; /* Removes black background from AI images */
+  filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.4)); /* Add a nice golden glow */
 }
 
 .model-card__info {
