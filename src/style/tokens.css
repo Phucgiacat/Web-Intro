@@ -19,8 +19,8 @@
   --ink-faint: oklch(0.55 0.01 250);      /* Tertiary text */
   --surface: oklch(0.18 0.015 250);       /* Card surfaces */
   --surface-raised: oklch(0.22 0.015 250);/* Elevated surfaces */
-  --base: oklch(0.13 0.01 250);           /* Page background */
-  --base-deep: oklch(0.08 0.01 250);      /* Deepest background */
+  --base: oklch(0.20 0.015 250);           /* Page background */
+  --base-deep: oklch(0.12 0.015 250);      /* Deepest background */
   --border: oklch(0.28 0.01 250);         /* Borders */
   --border-subtle: oklch(0.22 0.008 250); /* Subtle borders */
 
