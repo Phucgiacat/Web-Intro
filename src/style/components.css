@@ -260,11 +260,11 @@
 /* ─── Feature Block ─── */
 .feature-block {
   padding: var(--space-lg);
-  background: rgba(20, 10, 10, 0.45);
+  background: rgba(255, 255, 255, 0.05); /* Lighter glass */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 16px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), inset 0 0 16px rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-lg);
   transition: all var(--duration-base) var(--ease-out);
   position: relative;
@@ -325,18 +325,18 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  background: rgba(20, 10, 10, 0.45);
+  background: rgba(255, 255, 255, 0.05); /* Lighter glass */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), inset 0 0 12px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-md);
   transition: all var(--duration-base) var(--ease-out);
 }
 
 .model-card:hover {
   border-color: var(--border);
-  background: var(--surface-raised);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .model-card__logo {
@@ -389,11 +389,11 @@
 /* ─── Pricing Card ─── */
 .pricing-card {
   padding: var(--space-lg); /* Reduced padding */
-  background: rgba(20, 10, 10, 0.45);
+  background: rgba(255, 255, 255, 0.05); /* Lighter glass */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), inset 0 0 24px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2), inset 0 0 24px rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-xl);
   position: relative;
   transition: all var(--duration-base) var(--ease-out);
@@ -515,7 +515,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(15, 5, 5, 0.7);
+  background: rgba(10, 10, 15, 0.4); /* Lighter footer glass */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   z-index: -1;
