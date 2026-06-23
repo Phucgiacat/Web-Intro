@@ -269,18 +269,6 @@ function initNavScroll() {
   });
 }
 
-// ─── Interactive Demo ───
-function initInteractiveDemo() {
-  const windowEl = document.getElementById('demo-window');
-  const overlay = document.getElementById('demo-overlay');
-  
-  if (!windowEl || !overlay) return;
-
-  overlay.addEventListener('click', () => {
-    windowEl.classList.add('active');
-  });
-}
-
 // ─── SPA Tab Navigation ───
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -378,7 +366,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setLang(currentLang);
   initNavScroll();
   initSmoothScroll();
-  initInteractiveDemo();
   initMobileMenu();
   initMultiScenes();
   initScrollReveal();
