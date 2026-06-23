@@ -260,7 +260,7 @@
 /* ─── Feature Block ─── */
 .feature-block {
   padding: var(--space-lg);
-  background: rgba(15, 5, 5, 0.7); /* Smoky dark layer */
+  background: #000; /* Solid black */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -310,12 +310,12 @@
   font-size: var(--text-xl);
   font-weight: 700;
   margin-bottom: var(--space-xs);
-  color: var(--ink);
+  color: #fff;
 }
 
 .feature-block__desc {
-  color: var(--ink-muted);
-  font-size: var(--text-sm);
+  color: #fff;
+  font-size: var(--text-base);
   line-height: 1.7;
 }
 
@@ -325,7 +325,7 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  background: rgba(15, 5, 5, 0.7); /* Smoky dark layer */
+  background: #000; /* Solid black */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -336,7 +336,7 @@
 
 .model-card:hover {
   border-color: var(--border);
-  background: rgba(30, 15, 15, 0.8);
+  background: #111;
 }
 
 .model-card__logo {
@@ -363,13 +363,13 @@
 .model-card__name {
   font-weight: 700;
   font-size: var(--text-xl); /* Increased size */
-  color: var(--ink);
+  color: #fff;
   margin-bottom: 2px;
 }
 
 .model-card__provider {
-  font-size: var(--text-sm); /* Increased size */
-  color: var(--ink-muted); /* Made brighter */
+  font-size: var(--text-base); /* Increased size */
+  color: #eee; /* Made brighter */
 }
 
 .model-card__badge {
@@ -390,7 +390,7 @@
 /* ─── Pricing Card ─── */
 .pricing-card {
   padding: var(--space-lg); /* Reduced padding */
-  background: rgba(15, 5, 5, 0.7); /* Smoky dark layer */
+  background: #000; /* Solid black */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);

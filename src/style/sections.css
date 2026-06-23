@@ -118,8 +118,8 @@
 }
 
 .hero__subtitle {
-  font-size: var(--text-lg); /* Slightly smaller to fit long text */
-  color: var(--ink);
+  font-size: var(--text-xl); /* Slightly smaller to fit long text */
+  color: #fff;
   max-width: 60ch; /* Wider to prevent extreme wrapping */
   margin-inline: auto;
   line-height: 1.6;
@@ -157,7 +157,7 @@
   margin-inline: auto;
   max-width: 100%;
   flex-wrap: wrap;
-  background: rgba(10, 5, 5, 0.75); /* Heavy dark blur for stats */
+  background: #000; /* Heavy dark blur for stats */
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   padding: var(--space-md) var(--space-lg);
@@ -173,13 +173,13 @@
 .hero__stat-value {
   font-size: var(--text-3xl);
   font-weight: 800;
-  color: var(--ink);
+  color: #fff;
   font-family: var(--font-display);
 }
 
 .hero__stat-label {
-  font-size: var(--text-xs);
-  color: var(--ink-faint);
+  font-size: var(--text-sm);
+  color: #eee;
   margin-top: 2px;
 }
 
@@ -238,7 +238,7 @@
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.25),
     inset 0 0 20px rgba(255, 255, 255, 0.05);
-  background: rgba(20, 10, 10, 0.6); /* Smoky dark layer */
+  background: #000; /* Solid black */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   transform: perspective(1200px) rotateX(4deg);
