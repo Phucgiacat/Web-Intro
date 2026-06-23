@@ -15,14 +15,14 @@ export function initMultiScenes() {
   container.appendChild(renderer.domElement);
 
   // ─── TEXTURES ───
-  // High-quality Unsplash URLs for Global AI & Tech Theme
+  // High-quality Unsplash URLs for Premium Dark Global AI Theme
   const textureUrls = [
     'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2500&q=80', // Global Earth Network / Orbit (Hero)
-    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Modern AI Tech Nodes (Features)
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2500&q=80', // Advanced Circuit Board (Models)
-    'https://images.unsplash.com/photo-1557672172-298e090bd0f1?auto=format&fit=crop&w=2500&q=80', // Holographic Flowing Data (Demo)
-    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2500&q=80', // Optical Fiber / Fast Data (Pricing)
-    'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=2500&q=80'  // Abstract 3D AI Matrix (About)
+    'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=2500&q=80', // Dark Glowing Polygon Mesh (Features)
+    'https://images.unsplash.com/photo-1614064641913-6d67bf8b2eb4?auto=format&fit=crop&w=2500&q=80', // Glowing Neon AI Rings (Models)
+    'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=2500&q=80', // Blockchain / Data Blocks (Demo)
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Pricing)
+    'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2500&q=80'  // Digital Matrix Rain (About)
   ];
 
   const textureLoader = new THREE.TextureLoader();
@@ -82,8 +82,8 @@ export function initMultiScenes() {
       // Smooth crossfade
       vec4 finalColor = mix(colorCurrent, colorNext, smoothstep(0.0, 1.0, uProgress));
       
-      // Add smoky dark layer to make text legible
-      finalColor.rgb *= 0.6;
+      // Keep images mostly vibrant (they are naturally dark premium themes)
+      finalColor.rgb *= 0.85;
 
       gl_FragColor = finalColor;
     }
