@@ -406,7 +406,7 @@
 }
 
 .pricing-card--featured {
-  background: linear-gradient(#000, #000) padding-box,
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) padding-box,
               linear-gradient(135deg, var(--red-brand), var(--gold-brand)) border-box;
   border: 2px solid transparent;
 }
