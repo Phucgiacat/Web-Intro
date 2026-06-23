@@ -361,14 +361,15 @@
 }
 
 .model-card__name {
-  font-weight: 600;
-  font-size: var(--text-base);
+  font-weight: 700;
+  font-size: var(--text-xl); /* Increased size */
   color: var(--ink);
+  margin-bottom: 2px;
 }
 
 .model-card__provider {
-  font-size: var(--text-xs);
-  color: var(--ink-faint);
+  font-size: var(--text-sm); /* Increased size */
+  color: var(--ink-muted); /* Made brighter */
 }
 
 .model-card__badge {
