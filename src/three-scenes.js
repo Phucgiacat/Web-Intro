@@ -17,12 +17,12 @@ export function initMultiScenes() {
   // ─── TEXTURES ───
   // High-quality Unsplash URLs for Premium Dark Global AI Theme
   const textureUrls = [
-    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2500&q=80', // Global Earth Network / Orbit (Hero)
-    'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=2500&q=80', // Dark Glowing Polygon Mesh (Features)
-    'https://images.unsplash.com/photo-1614064641913-6d67bf8b2eb4?auto=format&fit=crop&w=2500&q=80', // Glowing Neon AI Rings (Models)
-    'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=2500&q=80', // Blockchain / Data Blocks (Demo)
-    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Pricing)
-    'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2500&q=80'  // Digital Matrix Rain (About)
+    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2500&q=80', // Glowing Fast Data Network (Hero)
+    'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=2500&q=80', // Abstract AI Tech Particles (Features)
+    'https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=2500&q=80', // Dark Glowing Circuit Board (Models)
+    'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=2500&q=80', // Blockchain / Data Blocks (Demo) - APPROVED
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Pricing) - APPROVED
+    'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=2500&q=80'  // Abstract 3D AI Mesh (About)
   ];
 
   const textureLoader = new THREE.TextureLoader();
