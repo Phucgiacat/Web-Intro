@@ -157,7 +157,7 @@
   margin-inline: auto;
   max-width: 100%;
   flex-wrap: wrap;
-  background: #000; /* Heavy dark blur for stats */
+  background: rgba(0, 0, 0, 0.4); /* Heavy dark blur for stats */
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   padding: var(--space-md) var(--space-lg);
