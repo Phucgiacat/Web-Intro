@@ -394,28 +394,38 @@
         <h2 class="section-title" data-i18n="contactTitle">Kết nối với chúng tôi</h2>
         <p class="section-desc" style="margin-inline: auto;" data-i18n="contactDesc">Để lại thông tin và đội ngũ Neo AI sẽ liên hệ hỗ trợ bạn sớm nhất.</p>
       </div>
-      <div class="contact__form-wrapper reveal reveal--delay-1" style="max-width: 600px; margin: 0 auto; background: #000; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2), inset 0 0 24px rgba(255, 255, 255, 0.05); border-radius: var(--radius-xl); padding: var(--space-lg);">
-        <form class="contact__form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất!'); this.reset();" style="display: flex; flex-direction: column; gap: var(--space-md);">
-          <div class="contact__group">
-            <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Họ và tên" required data-i18n-placeholder="contactName">
-          </div>
-          <div class="contact__group">
-            <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Email (Hoặc Số điện thoại)" required data-i18n-placeholder="contactEmail">
-          </div>
-          <div class="contact__group">
-            <textarea class="contact__input contact__textarea" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s; resize: vertical;" placeholder="Nội dung lời nhắn..." rows="4" required data-i18n-placeholder="contactMessage"></textarea>
-          </div>
-          <style>
-            .contact__input:focus {
-              border-color: var(--red-brand) !important;
-              box-shadow: 0 0 0 2px rgba(218, 37, 29, 0.2) !important;
-            }
-            .contact__input::placeholder {
-              color: var(--ink-faint);
-            }
-          </style>
-          <button type="submit" class="btn btn--primary btn--large" style="width: 100%; justify-content: center; margin-top: var(--space-sm);" data-i18n="contactSubmit">Gửi tin nhắn</button>
-        </form>
+      <div class="grid grid--2" style="gap: var(--space-2xl); align-items: center;">
+        <div class="contact__info reveal" style="text-align: left;">
+          <h3 style="font-size: var(--text-2xl); color: var(--gold-brand); margin-bottom: var(--space-md);">Thông tin Công ty</h3>
+          <p style="color: #fff; font-size: var(--text-lg); line-height: 1.8; margin-bottom: var(--space-sm);"><strong>Tên Công Ty:</strong> CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</p>
+          <p style="color: #fff; font-size: var(--text-lg); line-height: 1.8; margin-bottom: var(--space-sm);"><strong>Địa chỉ:</strong> Số nhà 9 - Tổ 8 - Khu 1 , Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng Ninh, Việt Nam.</p>
+          <p style="color: #fff; font-size: var(--text-lg); line-height: 1.8; margin-bottom: var(--space-lg);"><strong>CEO:</strong> Đỗ Văn Trung</p>
+          <p style="color: #ddd; font-size: var(--text-base); line-height: 1.6;">Rất hân hạnh được hợp tác và đồng hành cùng quý đối tác, khách hàng trong hành trình chuyển đổi số và ứng dụng Trí tuệ Nhân tạo.</p>
+        </div>
+
+        <div class="contact__form-wrapper reveal reveal--delay-1" style="width: 100%; max-width: 600px; margin: 0 auto; background: #000; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2), inset 0 0 24px rgba(255, 255, 255, 0.05); border-radius: var(--radius-xl); padding: var(--space-lg);">
+          <form class="contact__form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất!'); this.reset();" style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <div class="contact__group">
+              <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Họ và tên" required data-i18n-placeholder="contactName">
+            </div>
+            <div class="contact__group">
+              <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Email (Hoặc Số điện thoại)" required data-i18n-placeholder="contactEmail">
+            </div>
+            <div class="contact__group">
+              <textarea class="contact__input contact__textarea" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s; resize: vertical;" placeholder="Nội dung lời nhắn..." rows="4" required data-i18n-placeholder="contactMessage"></textarea>
+            </div>
+            <style>
+              .contact__input:focus {
+                border-color: var(--red-brand) !important;
+                box-shadow: 0 0 0 2px rgba(218, 37, 29, 0.2) !important;
+              }
+              .contact__input::placeholder {
+                color: var(--ink-faint);
+              }
+            </style>
+            <button type="submit" class="btn btn--primary btn--large" style="width: 100%; justify-content: center; margin-top: var(--space-sm);" data-i18n="contactSubmit">Gửi tin nhắn</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -440,7 +450,9 @@
         <div class="footer__col" style="grid-column: span 2;">
           <div class="footer__col-title">Thông tin liên hệ</div>
           <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.8; margin-bottom: 12px;">
-            <strong>Địa chỉ:</strong> Tòa nhà Landmark 81, TP. Hồ Chí Minh<br>
+            <strong style="color: #fff;">CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</strong><br>
+            <strong>Địa chỉ:</strong> Số nhà 9 - Tổ 8 - Khu 1 , Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng Ninh, Việt Nam.<br>
+            <strong>CEO:</strong> Đỗ Văn Trung<br>
             <strong>Email:</strong> contact@neoai.vn<br>
             <strong>Hotline:</strong> 1900 9999<br>
           </p>
