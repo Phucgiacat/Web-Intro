@@ -17,11 +17,11 @@ export function initMultiScenes() {
   // ─── TEXTURES ───
   // High-quality Unsplash URLs for Premium Dark Global AI Theme
   const textureUrls = [
-    'https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=2500&q=80', // AI Chip / Dark Circuit Board (Hero)
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Hero)
     'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=2500&q=80', // Abstract AI Tech Particles (Features)
     'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2500&q=80', // Glowing Fast Data Network (Models)
     'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=2500&q=80', // Blockchain / Data Blocks (Demo) - APPROVED
-    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Pricing) - APPROVED
+    'https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=2500&q=80', // AI Chip / Dark Circuit Board (Pricing)
     'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=2500&q=80', // Abstract 3D AI Mesh (About)
     'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=2500&q=80'  // Futuristic glowing connections (Contact)
   ];
