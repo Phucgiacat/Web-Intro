@@ -231,7 +231,9 @@
 .demo__cta-card {
   max-width: 800px;
   margin-inline: auto;
-  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
   text-align: center;
