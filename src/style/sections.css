@@ -360,7 +360,7 @@
 .about__card {
   position: relative;
   padding: var(--space-2xl);
-  background: rgba(20, 10, 10, 0.45);
+  background: #000;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.15);
