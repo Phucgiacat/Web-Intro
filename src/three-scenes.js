@@ -17,7 +17,7 @@ export function initMultiScenes() {
   // ─── TEXTURES ───
   // High-quality Unsplash URLs for Vietnam landmarks + AI Theme
   const textureUrls = [
-    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2500&q=80', // Global AI Network / Earth Space (Hero)
+    'https://images.unsplash.com/photo-1557672172-298e090bd0f1?auto=format&fit=crop&w=2500&q=80', // Bright optimistic abstract AI (Hero)
     'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=2500&q=80', // Bright lush valley (Features)
     'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2500&q=80', // Crystal clear beach (Models)
     'https://images.unsplash.com/photo-1557750255-c76072a7aad1?auto=format&fit=crop&w=2500&q=80', // Ninh Binh / Nature (Demo)
