@@ -82,8 +82,8 @@ export function initMultiScenes() {
       // Smooth crossfade
       vec4 finalColor = mix(colorCurrent, colorNext, smoothstep(0.0, 1.0, uProgress));
       
-      // Keep images fully vibrant and bright (no darkening)
-      finalColor.rgb *= 1.0;
+      // Add smoky dark layer to make text legible
+      finalColor.rgb *= 0.6;
 
       gl_FragColor = finalColor;
     }
