@@ -488,17 +488,14 @@
 .reveal {
   opacity: 0;
   transform: translateY(40px) scale(0.96);
-  filter: blur(12px);
-  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1),
-              transform 1s cubic-bezier(0.2, 0.8, 0.2, 1),
-              filter 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-  will-change: opacity, transform, filter;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
 }
 
 .reveal.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
-  filter: blur(0);
 }
 
 .reveal--delay-1 { transition-delay: 150ms; }

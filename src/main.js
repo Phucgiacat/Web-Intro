@@ -240,6 +240,11 @@ function initScrollReveal() {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
+        
+        // Remove classes after animation completes to avoid conflicting with hover transitions
+        setTimeout(() => {
+          entry.target.classList.remove('reveal', 'visible', 'reveal--delay-1', 'reveal--delay-2', 'reveal--delay-3', 'reveal--delay-4');
+        }, 1200);
       }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
