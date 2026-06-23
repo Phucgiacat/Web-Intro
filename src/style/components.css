@@ -138,8 +138,8 @@
 }
 
 .nav__link {
-  font-size: var(--text-sm);
-  font-weight: 500;
+  font-size: var(--text-lg); /* Significantly increased font size */
+  font-weight: 600; /* Also made slightly bolder */
   color: var(--ink-muted);
   transition: color var(--duration-fast) var(--ease-out);
   position: relative;
