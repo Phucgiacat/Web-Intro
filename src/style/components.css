@@ -80,13 +80,14 @@
   z-index: var(--z-sticky);
   padding: var(--space-sm) 0;
   transition: all var(--duration-base) var(--ease-out);
+  background: #000000;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .nav.scrolled {
-  background: oklch(0.13 0.01 250 / 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .nav__inner {
@@ -155,11 +156,13 @@
   transition: width var(--duration-base) var(--ease-out);
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.active {
   color: var(--ink);
 }
 
-.nav__link:hover::after {
+.nav__link:hover::after,
+.nav__link.active::after {
   width: 100%;
 }
 

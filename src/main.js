@@ -270,6 +270,14 @@ function initSmoothScroll() {
             sec.classList.remove('active-section');
           });
           target.classList.add('active-section');
+
+          // Update active nav link
+          document.querySelectorAll('.nav__link').forEach(navLink => {
+            navLink.classList.remove('active');
+            if (navLink.getAttribute('href') === targetId) {
+              navLink.classList.add('active');
+            }
+          });
         }
 
         // Jump to top instantly, acting like a new page load
