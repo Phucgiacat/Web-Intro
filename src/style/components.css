@@ -448,8 +448,8 @@
 }
 
 .pricing-card__price span:last-child {
-  font-size: var(--text-lg);
-  font-weight: 500;
+  font-size: clamp(1.8rem, 3vw, 2.5rem); /* Much bigger unit text */
+  font-weight: 600;
   color: var(--ink-muted);
 }
 
