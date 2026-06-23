@@ -15,14 +15,14 @@ export function initMultiScenes() {
   container.appendChild(renderer.domElement);
 
   // ─── TEXTURES ───
-  // High-quality Unsplash URLs for Vietnam landmarks + AI Theme
+  // High-quality Unsplash URLs for Global AI & Tech Theme
   const textureUrls = [
-    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Modern AI Network / Tech Nodes (Hero)
-    'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=2500&q=80', // Bright lush valley (Features)
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2500&q=80', // Crystal clear beach (Models)
-    'https://images.unsplash.com/photo-1557750255-c76072a7aad1?auto=format&fit=crop&w=2500&q=80', // Ninh Binh / Nature (Demo)
-    'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=2500&q=80', // Ho Chi Minh City Skyline (Pricing)
-    'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2500&q=80'  // Bright mountain lake (About)
+    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2500&q=80', // Global Earth Network / Orbit (Hero)
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Modern AI Tech Nodes (Features)
+    'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2500&q=80', // Advanced Circuit Board (Models)
+    'https://images.unsplash.com/photo-1557672172-298e090bd0f1?auto=format&fit=crop&w=2500&q=80', // Holographic Flowing Data (Demo)
+    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2500&q=80', // Optical Fiber / Fast Data (Pricing)
+    'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=2500&q=80'  // Abstract 3D AI Matrix (About)
   ];
 
   const textureLoader = new THREE.TextureLoader();
