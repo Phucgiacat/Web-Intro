@@ -406,13 +406,21 @@
 }
 
 .pricing-card--featured {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) padding-box,
-              linear-gradient(135deg, var(--red-brand), var(--gold-brand)) border-box;
+  background: rgba(0, 0, 0, 0.4);
   border: 2px solid transparent;
 }
 
 .pricing-card--featured::before {
-  display: none;
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--red-brand), var(--gold-brand));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .pricing-card__badge {
