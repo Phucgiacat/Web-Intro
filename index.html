@@ -435,17 +435,17 @@
           </div>
           
           <!-- Form Side -->
-          <div class="contact__form-wrapper" style="padding: var(--space-2xl); background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1;">
+          <div class="contact__form-wrapper" style="padding: var(--space-2xl); background: rgba(255, 255, 255, 0.02); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
             <h3 style="font-size: var(--text-2xl); color: #fff; margin-bottom: var(--space-lg); font-weight: 700;">Gửi tin nhắn cho chúng tôi</h3>
-            <form class="contact__form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất!'); this.reset();" style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <form class="contact__form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất!'); this.reset();" style="display: flex; flex-direction: column; gap: var(--space-md); flex: 1;">
               <div class="contact__group">
                 <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Họ và tên" required data-i18n-placeholder="contactName">
               </div>
               <div class="contact__group">
                 <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Email (Hoặc Số điện thoại)" required data-i18n-placeholder="contactEmail">
               </div>
-              <div class="contact__group">
-                <textarea class="contact__input contact__textarea" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s; resize: vertical;" placeholder="Nội dung lời nhắn..." rows="5" required data-i18n-placeholder="contactMessage"></textarea>
+              <div class="contact__group" style="flex: 1; display: flex; flex-direction: column;">
+                <textarea class="contact__input contact__textarea" style="width: 100%; flex: 1; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s; resize: none;" placeholder="Nội dung lời nhắn..." required data-i18n-placeholder="contactMessage"></textarea>
               </div>
               <style>
                 .contact__input:focus {
