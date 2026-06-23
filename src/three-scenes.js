@@ -18,11 +18,11 @@ export function initMultiScenes() {
   // High-quality Unsplash URLs for Vietnam landmarks + AI Theme
   const textureUrls = [
     'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2500&q=80', // Global AI Network / Earth Space (Hero)
-    'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2500&q=80', // Ha Long Bay (Features)
-    'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=2500&q=80', // Hoi An (Models)
+    'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=2500&q=80', // Bright lush valley (Features)
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2500&q=80', // Crystal clear beach (Models)
     'https://images.unsplash.com/photo-1557750255-c76072a7aad1?auto=format&fit=crop&w=2500&q=80', // Ninh Binh / Nature (Demo)
     'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=2500&q=80', // Ho Chi Minh City Skyline (Pricing)
-    'https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&w=2500&q=80'  // Sapa Terraces (About)
+    'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2500&q=80'  // Bright mountain lake (About)
   ];
 
   const textureLoader = new THREE.TextureLoader();

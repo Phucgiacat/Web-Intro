@@ -8,10 +8,12 @@ import { initMultiScenes } from './three-scenes.js';
 // ─── i18n ───
 const translations = {
   vi: {
+    navHome: 'Trang chủ',
     navFeatures: 'Tính năng',
     navModels: 'Mô hình AI',
     navPricing: 'Bảng giá',
     navDemo: 'Demo',
+    navContact: 'Liên hệ',
     navCta: 'Dùng thử',
     heroEyebrow: 'Trợ lý AI thế hệ mới',
     heroTitle1: 'NEO AI – KỶ NGUYÊN',
@@ -96,10 +98,12 @@ const translations = {
     footerMadeWith: 'Được tạo với ❤️ tại Việt Nam'
   },
   en: {
+    navHome: 'Home',
     navFeatures: 'Features',
     navModels: 'AI Models',
     navPricing: 'Pricing',
     navDemo: 'Demo',
+    navContact: 'Contact',
     navCta: 'Try Now',
     heroEyebrow: 'Next-gen AI Assistant',
     heroTitle1: 'AI Power,',
