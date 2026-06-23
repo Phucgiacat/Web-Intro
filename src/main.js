@@ -90,6 +90,13 @@ const translations = {
     ctaDesc: 'Neo AI - Đối tác AI đáng tin cậy nhất của bạn.',
     ctaBtn: 'Liên hệ Hợp tác',
     ctaBtn2: 'Đội ngũ Phát triển',
+    contactLabel: 'Liên hệ',
+    contactTitle: 'Kết nối với chúng tôi',
+    contactDesc: 'Để lại thông tin và đội ngũ Neo AI sẽ liên hệ hỗ trợ bạn sớm nhất.',
+    contactName: 'Họ và tên',
+    contactEmail: 'Email công việc',
+    contactMessage: 'Nội dung lời nhắn...',
+    contactSubmit: 'Gửi tin nhắn',
     footerDesc: 'Nền tảng AI đa mô hình, thiết kế cho người Việt.',
     footerProduct: 'Sản phẩm',
     footerCompany: 'Về chúng tôi',
@@ -182,6 +189,13 @@ const translations = {
     ctaTitle: 'Ready to experience AI?',
     ctaDesc: 'Join thousands of Vietnamese users using Neo AI every day.',
     ctaBtn: 'Try Neo AI for Free',
+    contactLabel: 'Contact',
+    contactTitle: 'Get in touch',
+    contactDesc: 'Leave your information and the Neo AI team will contact you shortly.',
+    contactName: 'Full Name',
+    contactEmail: 'Work Email',
+    contactMessage: 'Your message...',
+    contactSubmit: 'Send Message',
     footerDesc: 'Multi-model AI platform, designed for Vietnam.',
     footerProduct: 'Product',
     footerCompany: 'Company',
@@ -208,6 +222,9 @@ function setLang(lang) {
   });
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     el.innerHTML = t(el.dataset.i18nHtml);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.placeholder = t(el.dataset.i18nPlaceholder);
   });
   
   // Update lang toggle

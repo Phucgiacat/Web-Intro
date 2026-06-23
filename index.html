@@ -395,8 +395,42 @@
     </div>
   </section>
 
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact content-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <div class="section-label" data-i18n="contactLabel">Liên hệ</div>
+        <h2 class="section-title" data-i18n="contactTitle">Kết nối với chúng tôi</h2>
+        <p class="section-desc" style="margin-inline: auto;" data-i18n="contactDesc">Để lại thông tin và đội ngũ Neo AI sẽ liên hệ hỗ trợ bạn sớm nhất.</p>
+      </div>
+      <div class="contact__form-wrapper reveal reveal--delay-1" style="max-width: 600px; margin: 0 auto; background: rgba(15, 5, 5, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2), inset 0 0 24px rgba(255, 255, 255, 0.05); border-radius: var(--radius-xl); padding: var(--space-lg);">
+        <form class="contact__form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất!'); this.reset();" style="display: flex; flex-direction: column; gap: var(--space-md);">
+          <div class="contact__group">
+            <input type="text" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Họ và tên" required data-i18n-placeholder="contactName">
+          </div>
+          <div class="contact__group">
+            <input type="email" class="contact__input" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s;" placeholder="Email công việc" required data-i18n-placeholder="contactEmail">
+          </div>
+          <div class="contact__group">
+            <textarea class="contact__input contact__textarea" style="width: 100%; padding: 16px; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.5); color: var(--ink); font-size: var(--text-base); outline: none; transition: all 0.3s; resize: vertical;" placeholder="Nội dung lời nhắn..." rows="4" required data-i18n-placeholder="contactMessage"></textarea>
+          </div>
+          <style>
+            .contact__input:focus {
+              border-color: var(--red-brand) !important;
+              box-shadow: 0 0 0 2px rgba(218, 37, 29, 0.2) !important;
+            }
+            .contact__input::placeholder {
+              color: var(--ink-faint);
+            }
+          </style>
+          <button type="submit" class="btn btn--primary btn--large" style="width: 100%; justify-content: center; margin-top: var(--space-sm);" data-i18n="contactSubmit">Gửi tin nhắn</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ FOOTER ═══ -->
-  <footer class="footer" id="contact">
+  <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col">
