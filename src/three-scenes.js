@@ -19,7 +19,7 @@ export function initMultiScenes() {
   const textureUrls = [
     'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2500&q=80', // Blue Cyber Nodes (Hero)
     'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=2500&q=80', // Abstract AI Tech Particles (Features)
-    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2500&q=80', // Glowing Fast Data Network (Models)
+    '/images/models_bg.png', // Interconnected AI neural network (Models)
     '/images/demo_bg.png', // AI HUD rings (Demo)
     'https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=2500&q=80', // AI Chip / Dark Circuit Board (Pricing)
     'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=2500&q=80', // Abstract 3D AI Mesh (About)
