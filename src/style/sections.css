@@ -157,7 +157,7 @@
   margin-inline: auto;
   max-width: 100%;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.4); /* Heavy dark blur for stats */
+  background: rgba(10, 5, 5, 0.75); /* Heavy dark blur for stats */
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   padding: var(--space-md) var(--space-lg);
@@ -231,7 +231,7 @@
 .demo__cta-card {
   max-width: 800px;
   margin-inline: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 5, 5, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: var(--radius-xl);

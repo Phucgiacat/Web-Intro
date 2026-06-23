@@ -260,7 +260,7 @@
 /* ─── Feature Block ─── */
 .feature-block {
   padding: var(--space-lg);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 5, 5, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -325,7 +325,7 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 5, 5, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -390,7 +390,7 @@
 /* ─── Pricing Card ─── */
 .pricing-card {
   padding: var(--space-lg); /* Reduced padding */
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 5, 5, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -406,7 +406,7 @@
 }
 
 .pricing-card--featured {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 5, 5, 0.75);
   border: 2px solid transparent;
 }
 
