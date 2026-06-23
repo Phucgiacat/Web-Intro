@@ -518,7 +518,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: #000;
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   z-index: -1;
