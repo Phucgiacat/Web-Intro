@@ -25,48 +25,80 @@
       color: var(--text-primary);
     }
     .privacy-container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 120px auto 80px;
       background: var(--bg-surface);
       border-radius: var(--radius-xl);
       border: 1px solid var(--border-light);
-      padding: 48px;
+      padding: 48px 64px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     }
+    .privacy-header {
+      margin-bottom: 48px;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 32px;
+    }
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 992px) {
+      .privacy-layout {
+        grid-template-columns: 1fr;
+      }
+    }
     .intro-text {
-      text-align: center !important;
+      text-align: justify;
       font-size: 1.1rem;
-      color: var(--text-primary) !important;
-      margin-bottom: 2rem !important;
-      max-width: 700px;
+      line-height: 1.7;
+      color: var(--text-secondary) !important;
+      margin-bottom: 1.5rem !important;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
     }
-    .toc {
+    .toc-sticky {
+      position: sticky;
+      top: 100px;
       background: var(--bg-surface-elevated);
-      padding: 24px 32px;
+      padding: 24px;
       border-radius: var(--radius-lg);
-      margin: 32px 0;
       border: 1px solid var(--border-light);
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
     }
-    .toc h3 {
+    .toc-sticky h3 {
       margin-top: 0;
       color: var(--accent-secondary);
       border-bottom: 1px solid var(--border-light);
       padding-bottom: 12px;
       margin-bottom: 16px;
+      font-size: 1.2rem;
     }
-    .toc ul {
+    .toc-sticky ul {
       list-style-type: none;
       padding-left: 0;
       margin-bottom: 0;
     }
-    .toc li {
+    .toc-sticky li {
       margin-bottom: 12px;
+    }
+    .toc-sticky a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: block;
+      transition: all 0.2s;
+    }
+    .toc-sticky a:hover {
+      color: var(--accent-primary);
+      transform: translateX(4px);
     }
     .privacy-container h1 {
       font-size: 2.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       color: var(--text-primary);
       font-family: 'Satoshi', sans-serif;
       text-align: center;
@@ -146,26 +178,34 @@
 
   <!-- CONTENT -->
   <main class="privacy-container reveal">
-    <h1>CHÍNH SÁCH NGƯỜI DÙNG & BẢO MẬT</h1>
-    
-    <p class="intro-text">Tại Neo AI, sứ mệnh của chúng tôi là đảm bảo rằng trí tuệ nhân tạo nói chung mang lại lợi ích cho tất cả mọi người. Chúng tôi xây dựng và thiết kế Neo AI để giúp mọi người học hỏi, sáng tạo và giải quyết vấn đề.</p>
-    <p class="intro-text" style="font-size: 1rem; color: var(--text-secondary) !important;">Tại NEO AI, chúng tôi cam kết tôn trọng quyền riêng tư của bạn và cam kết mạnh mẽ bảo mật mọi thông tin chúng tôi thu thập từ bạn hoặc về bạn. Chính sách quyền riêng tư này mô tả các phương pháp tiến hành của chúng tôi liên quan đến dữ liệu cá nhân mà chúng tôi thu thập từ bạn hoặc về bạn, và cách chúng tôi sử dụng dữ liệu đó khi bạn sử dụng trang web, ứng dụng và dịch vụ của chúng tôi (gọi chung là “Dịch vụ”).</p>
-    <div class="toc">
-      <h3>Mục lục</h3>
-      <ul>
-        <li><a href="#sec-1">1. Dữ liệu cá nhân mà chúng tôi thu thập</a></li>
-        <li><a href="#sec-2">2. Cách chúng tôi sử dụng Dữ liệu cá nhân</a></li>
-        <li><a href="#sec-3">3. Tiết lộ Dữ liệu cá nhân</a></li>
-        <li><a href="#sec-4">4. Lưu giữ</a></li>
-        <li><a href="#sec-5">5. Kiểm soát dữ liệu</a></li>
-        <li><a href="#sec-6">6. Các quyền của bạn</a></li>
-        <li><a href="#sec-7">7. Bảo mật</a></li>
-        <li><a href="#sec-8">8. Các thay đổi đối với chính sách bảo mật</a></li>
-        <li><a href="#sec-9">9. Cách liên hệ với chúng tôi</a></li>
-      </ul>
+    <div class="privacy-header">
+      <h1>CHÍNH SÁCH NGƯỜI DÙNG & BẢO MẬT</h1>
+      <p class="intro-text">Tại Neo AI, sứ mệnh của chúng tôi là đảm bảo rằng trí tuệ nhân tạo nói chung mang lại lợi ích cho tất cả mọi người. Chúng tôi xây dựng và thiết kế Neo AI để giúp mọi người học hỏi, sáng tạo và giải quyết vấn đề.</p>
+      <p class="intro-text">Tại NEO AI, chúng tôi cam kết tôn trọng quyền riêng tư của bạn và cam kết mạnh mẽ bảo mật mọi thông tin chúng tôi thu thập từ bạn hoặc về bạn. Chính sách quyền riêng tư này mô tả các phương pháp tiến hành của chúng tôi liên quan đến dữ liệu cá nhân mà chúng tôi thu thập từ bạn hoặc về bạn, và cách chúng tôi sử dụng dữ liệu đó khi bạn sử dụng trang web, ứng dụng và dịch vụ của chúng tôi (gọi chung là “Dịch vụ”).</p>
     </div>
 
-    <h2 id="sec-1">1. Dữ liệu cá nhân mà chúng tôi thu thập</h2>
+    <div class="privacy-layout">
+      <!-- SIDEBAR TOC -->
+      <aside class="toc-sidebar">
+        <div class="toc-sticky">
+          <h3>Mục lục</h3>
+          <ul>
+            <li><a href="#sec-1">1. Dữ liệu cá nhân thu thập</a></li>
+            <li><a href="#sec-2">2. Sử dụng Dữ liệu cá nhân</a></li>
+            <li><a href="#sec-3">3. Tiết lộ Dữ liệu cá nhân</a></li>
+            <li><a href="#sec-4">4. Lưu giữ</a></li>
+            <li><a href="#sec-5">5. Kiểm soát dữ liệu</a></li>
+            <li><a href="#sec-6">6. Các quyền của bạn</a></li>
+            <li><a href="#sec-7">7. Bảo mật</a></li>
+            <li><a href="#sec-8">8. Thay đổi chính sách</a></li>
+            <li><a href="#sec-9">9. Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="privacy-content">
+        <h2 id="sec-1">1. Dữ liệu cá nhân mà chúng tôi thu thập</h2>
     <p>Chúng tôi thu thập dữ liệu cá nhân liên quan đến bạn (“Dữ liệu cá nhân”) như sau:</p>
     <p><strong>Dữ liệu cá nhân bạn cung cấp:</strong> Chúng tôi thu thập Dữ liệu cá nhân nếu bạn tạo tài khoản để sử dụng các Dịch vụ của chúng tôi hoặc liên lạc với chúng tôi như sau:</p>
     <ul>
@@ -241,6 +281,8 @@
 
     <h2 id="sec-9">9. Cách liên hệ với chúng tôi</h2>
     <p>Vui lòng liên hệ với bộ phận hỗ trợ <a href="mailto:contact@neoai.vn">contact@neoai.vn</a> nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào chưa được giải quyết trong Chính sách quyền riêng tư này.</p>
+      </div> <!-- End privacy-content -->
+    </div> <!-- End privacy-layout -->
   </main>
 
   <!-- FOOTER -->
