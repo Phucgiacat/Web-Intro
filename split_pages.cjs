@@ -1,195 +1,10 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neo AI — Điều khoản Dịch vụ</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>">
-  <meta name="description" content="Chính sách bảo mật và điều khoản người dùng của hệ thống Neo AI." />
-  <meta name="theme-color" content="#1a1a2e" />
+const fs = require('fs');
+const path = require('path');
 
+const baseHtml = fs.readFileSync('terms.html', 'utf8');
 
-  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.min.css" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="/src/style/tokens.css">
-  <link rel="stylesheet" href="/src/style/base.css">
-  <link rel="stylesheet" href="/src/style/layout.css">
-  <link rel="stylesheet" href="/src/style/components.css">
-
-  <style>
-    /* Privacy Policy Document Styles */
-    body {
-      background-color: var(--bg-deep-space);
-      color: var(--text-primary);
-    }
-    .privacy-container {
-      max-width: 1200px;
-      margin: 120px auto 80px;
-      background: var(--bg-surface);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border-light);
-      padding: 48px 64px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    }
-    .privacy-header {
-      margin-bottom: 48px;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 32px;
-    }
-    .privacy-layout {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-    @media (max-width: 992px) {
-      .privacy-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-    .intro-text {
-      text-align: justify;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--text-secondary) !important;
-      margin-bottom: 1.5rem !important;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .toc-sticky {
-      position: sticky;
-      top: 100px;
-      background: var(--bg-surface-elevated);
-      padding: 24px;
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border-light);
-      max-height: calc(100vh - 120px);
-      overflow-y: auto;
-    }
-    .toc-sticky h3 {
-      margin-top: 0;
-      color: var(--accent-secondary);
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-      font-size: 1.2rem;
-    }
-    .toc-sticky ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-bottom: 0;
-    }
-    .toc-sticky li {
-      margin-bottom: 12px;
-    }
-    .toc-sticky a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 0.95rem;
-      display: block;
-      transition: all 0.2s;
-    }
-    .toc-sticky a:hover {
-      color: var(--accent-primary);
-      transform: translateX(4px);
-    }
-    .privacy-container h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-primary);
-      font-family: 'Satoshi', sans-serif;
-      text-align: center;
-    }
-    .privacy-container h2 {
-      font-size: 1.5rem;
-      margin-top: 3rem;
-      margin-bottom: 1.25rem;
-      color: var(--accent-secondary);
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 0.5rem;
-      font-family: 'Satoshi', sans-serif;
-    }
-    .privacy-container h3 {
-      font-size: 1.25rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-    .privacy-container p {
-      margin-bottom: 1.25rem;
-      line-height: 1.7;
-      color: var(--text-secondary);
-      text-align: justify;
-    }
-    .privacy-container ul {
-      margin-bottom: 1.5rem;
-      padding-left: 1.5rem;
-      color: var(--text-secondary);
-      line-height: 1.7;
-      text-align: justify;
-    }
-    .privacy-container li {
-      margin-bottom: 0.75rem;
-      text-align: justify;
-    }
-    .privacy-container a {
-      color: var(--accent-primary);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .privacy-container a:hover {
-      text-decoration: underline;
-      color: var(--accent-secondary);
-    }
-    .privacy-container strong {
-      color: var(--text-primary);
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .privacy-container {
-        padding: 32px 20px;
-        margin-top: 100px;
-      }
-      .privacy-container h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- NAV -->
-  <nav class="nav" id="main-nav" style="background: var(--bg-surface-elevated); border-bottom: 1px solid var(--border-light);">
-    <div class="container nav__inner">
-      <a href="/" class="nav__logo">
-        <div class="logo-mask">NEO AI</div>
-      </a>
-      <div class="nav__links">
-        <a href="/" class="nav__link">Trang chủ</a>
-      </div>
-      <div class="nav__actions">
-        <a href="https://neoai.io.vn/" target="_blank" class="btn btn--primary btn--small">Dùng thử</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- CONTENT -->
-  <main class="privacy-container reveal">
-    <div class="privacy-header">
-      <h1>ĐIỀU KHOẢN DỊCH VỤ</h1>
-      <p class="intro-text">Tại Neo AI, sứ mệnh của chúng tôi là đảm bảo rằng trí tuệ nhân tạo nói chung mang lại lợi ích cho tất cả mọi người. Chúng tôi xây dựng và thiết kế Neo AI để giúp mọi người học hỏi, sáng tạo và giải quyết vấn đề.</p>
-      <p class="intro-text">Tại NEO AI, chúng tôi cam kết tôn trọng quyền riêng tư của bạn và cam kết mạnh mẽ bảo mật mọi thông tin chúng tôi thu thập từ bạn hoặc về bạn. Chính sách quyền riêng tư này mô tả các phương pháp tiến hành của chúng tôi liên quan đến dữ liệu cá nhân mà chúng tôi thu thập từ bạn hoặc về bạn, và cách chúng tôi sử dụng dữ liệu đó khi bạn sử dụng trang web, ứng dụng và dịch vụ của chúng tôi (gọi chung là “Dịch vụ”).</p>
-    </div>
-
-    <div class="privacy-layout">
-      <!-- SIDEBAR TOC -->
-      <aside class="toc-sidebar">
-        <div class="toc-sticky">
-
+// The new sidebar TOC to replace the old one
+const newToc = `
           <h3>Mục lục</h3>
           <ul>
             <li><a href="terms.html">Điều khoản Dịch vụ</a></li>
@@ -198,14 +13,27 @@
             <li><a href="payment.html">Chính sách Thanh toán</a></li>
             <li><a href="refund.html">Chính sách Hoàn tiền</a></li>
           </ul>
+`;
 
-        </div>
-      </aside>
+// Helper to build a page
+function buildPage(title, contentHtml) {
+    let html = baseHtml;
+    // Replace the title
+    html = html.replace(/<h1>.*?<\/h1>/, `<h1>${title.toUpperCase()}</h1>`);
+    // Replace TOC
+    html = html.replace(/<aside class="toc-sidebar">[\s\S]*?<\/aside>/, `<aside class="toc-sidebar">\n        <div class="toc-sticky">\n${newToc}\n        </div>\n      </aside>`);
+    // Replace Content
+    html = html.replace(/<div class="privacy-content">[\s\S]*?<!-- privacy-layout end padding -->/g, `<div class="privacy-content">\n${contentHtml}\n      </div>\n      <!-- privacy-layout end padding -->`);
+    // Replace footer links globally in the whole HTML
+    html = html.replace(/href="terms\.html#payment"/g, 'href="payment.html"');
+    html = html.replace(/href="terms\.html#delivery"/g, 'href="delivery.html"');
+    html = html.replace(/href="terms\.html#refund"/g, 'href="refund.html"');
+    
+    return html;
+}
 
-      <!-- MAIN CONTENT -->
-      
-      <div class="privacy-content">
-
+// 1. terms.html content
+const termsContent = `
           <p class="intro-text">
             Cảm ơn bạn đã sử dụng Neo AI!<br><br>
             Các Điều khoản này tạo thành một thỏa thuận giữa bạn và TRUNG VIỆT., LTD, và chúng bao gồm Điều khoản dịch vụ của chúng tôi và các quy định quan trọng để giải quyết tranh chấp thông qua trọng tài. Thông qua việc sử dụng Dịch vụ của chúng tôi, bạn đồng ý với các Điều khoản này.
@@ -303,75 +131,61 @@
             <h2>10. Giải quyết tranh chấp</h2>
             <p>Mọi tranh chấp phát sinh từ hoặc liên quan đến việc sử dụng dịch vụ của Neo AI trước hết sẽ được giải quyết thông qua thương lượng. Trường hợp không đạt được thỏa thuận, tranh chấp sẽ được giải quyết tại Trung tâm Trọng tài thương mại hợp pháp tại Việt Nam (ví dụ: VIAC) hoặc Tòa án có thẩm quyền tại Việt Nam theo quy định của pháp luật hiện hành.</p>
           </section>
+`;
 
-      </div>
-      <!-- privacy-layout end padding -->
-    </div>
-    
+const deliveryContent = `
+          <section id="delivery" class="policy-section">
+            <h2>Chính sách Bàn giao & Kích hoạt</h2>
+            <p><strong>Bản chất Dịch vụ:</strong> Neo AI là một dịch vụ kỹ thuật số, không có sản phẩm vật lý nào được giao nhận.</p>
+            <p><strong>Quy trình Kích hoạt:</strong> Quyền truy cập các tính năng trả phí sẽ được kích hoạt tự động trên tài khoản của bạn ngay sau khi chúng tôi xác nhận giao dịch thanh toán thành công.</p>
+            <p><strong>Thời gian:</strong> Quá trình này diễn ra gần như tức thời, thông thường trong vòng vài phút.</p>
+            <p><strong>Xác nhận:</strong> Hệ thống sẽ tự động gửi một email xác nhận thanh toán và kích hoạt dịch vụ thành công đến địa chỉ email bạn đã đăng ký.</p>
+          </section>
+`;
 
-</main>
+const paymentContent = `
+          <section id="payment" class="policy-section">
+            <h2>Chính sách Thanh toán</h2>
+            <p><strong>Phương thức được Chấp nhận:</strong> Chúng tôi chấp nhận thanh toán qua các đối tác cổng thanh toán an toàn, bao gồm:</p>
+            <ul>
+              <li>Thẻ Tín dụng/Ghi nợ (Visa, Mastercard).</li>
+              <li>Các loại Ví điện tử phổ biến (Momo, ZaloPay, VNPAY-QR).</li>
+              <li>Chuyển khoản Ngân hàng trực tuyến.</li>
+            </ul>
+            <p><strong>Bảo mật Thanh toán:</strong> Chúng tôi không lưu trữ thông tin thẻ của bạn. Mọi giao dịch được mã hóa và xử lý bởi các bên thứ ba tuân thủ tiêu chuẩn bảo mật cao nhất.</p>
+            <p><strong>Hóa đơn:</strong> Hóa đơn điện tử cho mỗi lần thanh toán sẽ được gửi tự động đến email của bạn.</p>
+          </section>
+`;
 
-  <!-- FOOTER -->
-    <footer class="footer">
-    <div class="container">
-      <div class="footer__grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-        
-        <div class="footer__col">
-          <a href="index.html#hero" class="nav__logo" style="margin-bottom: var(--space-sm);">
-            <div class="logo-mask">NEO AI</div>
-          </a>
-          <div class="footer__col-title">Về Neo AI</div>
-          <a href="index.html#features">Giới thiệu</a>
-          <a href="index.html#contact">Liên hệ</a>
-          <a href="#company-info">Thông tin pháp lý & Chủ sở hữu</a>
-        </div>
+const refundContent = `
+          <section id="refund" class="policy-section">
+            <h2>Chính sách Hoàn tiền</h2>
+            <p><strong>Nguyên tắc chung:</strong> Do đặc tính của dịch vụ kỹ thuật số và việc cấp quyền truy cập ngay lập tức, các khoản phí thuê bao đã thanh toán là không được hoàn lại.</p>
+            <p><strong>Hủy Dịch vụ:</strong> Bạn có thể hủy gói thuê bao của mình bất cứ lúc nào. Việc hủy sẽ ngăn chặn các khoản phí trong tương lai. Bạn sẽ tiếp tục được sử dụng các tính năng đã trả phí cho đến khi kết thúc chu kỳ thanh toán hiện tại.</p>
+            <p>Bạn có thể hủy gói thuê bao Neo AI của mình bất cứ lúc nào. Việc hủy sẽ có hiệu lực vào cuối chu kỳ thanh toán hiện tại của bạn. Xin lưu ý rằng các khoản phí đã thanh toán là không được hoàn lại, trừ khi có yêu cầu bởi pháp luật.</p>
+          </section>
+`;
 
-        <div class="footer__col">
-          <div class="footer__col-title">Chính sách & Điều khoản</div>
-          <a href="terms.html">Điều khoản Dịch vụ</a>
-          <a href="privacy.html">Chính sách Bảo mật</a>
-          <a href="payment.html">Chính sách Thanh toán</a>
-          <a href="delivery.html">Chính sách Bàn giao & Kích hoạt</a>
-          <a href="refund.html">Chính sách Hoàn tiền</a>
-        </div>
+// Save files
+fs.writeFileSync('terms.html', buildPage('Điều khoản Dịch vụ', termsContent));
+fs.writeFileSync('delivery.html', buildPage('Chính sách Bàn giao & Kích hoạt', deliveryContent));
+fs.writeFileSync('payment.html', buildPage('Chính sách Thanh toán', paymentContent));
+fs.writeFileSync('refund.html', buildPage('Chính sách Hoàn tiền', refundContent));
 
-        <div class="footer__col">
-          <div class="footer__col-title">Hỗ trợ Khách hàng</div>
-          <a href="index.html#contact">Trung tâm Hỗ trợ</a>
-          <a href="index.html#faq">Câu hỏi Thường gặp (FAQs)</a>
-        </div>
+// Update index.html and privacy.html footer links
+['index.html', 'privacy.html'].forEach(file => {
+    let html = fs.readFileSync(file, 'utf8');
+    html = html.replace(/href="terms\.html#payment"/g, 'href="payment.html"');
+    html = html.replace(/href="terms\.html#delivery"/g, 'href="delivery.html"');
+    html = html.replace(/href="terms\.html#refund"/g, 'href="refund.html"');
+    // Also replace privacy TOC if it exists
+    html = html.replace(/<aside class="toc-sidebar">[\s\S]*?<\/aside>/, `<aside class="toc-sidebar">\n        <div class="toc-sticky">\n${newToc}\n        </div>\n      </aside>`);
+    fs.writeFileSync(file, html);
+});
 
-        <div class="footer__col" id="company-info" style="grid-column: 1 / -1; margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
-          <div class="footer__col-title">Thông tin pháp lý & Chủ sở hữu Website</div>
-          <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.8; margin-bottom: 12px;">
-            <strong style="color: #fff;">Tên công ty: CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</strong><br>
-            <strong>Mã số doanh nghiệp:</strong> 5702059081<br>
-            <strong>Người đại diện theo pháp luật:</strong> ĐỖ VĂN TRUNG<br>
-            <strong>Địa chỉ trụ sở:</strong> Số nhà 9, Tổ 8, Khu 1, Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng Ninh, Việt Nam<br>
-            <strong>Email hỗ trợ:</strong> contact@neoai.ai.vn ( contact@neoai.io.vn )<br>
-            <strong>Hotline:</strong> (+84) 835108363<br>
-            <strong>Giấy chứng nhận đăng ký doanh nghiệp:</strong> SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH QUẢNG NINH - CẤP NGÀY 22 THÁNG 09 NĂM 2020<br>
-          </p>
-          <div style="display: flex; gap: 12px;">
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-          </div>
-        </div>
+// Update vite.config.js
+let viteConfig = fs.readFileSync('vite.config.js', 'utf8');
+viteConfig = viteConfig.replace(/terms: resolve\(__dirname, 'terms\.html'\)/, "terms: resolve(__dirname, 'terms.html'),\n        delivery: resolve(__dirname, 'delivery.html'),\n        payment: resolve(__dirname, 'payment.html'),\n        refund: resolve(__dirname, 'refund.html')");
+fs.writeFileSync('vite.config.js', viteConfig);
 
-      </div>
-      <div class="footer__bottom">
-        <span data-i18n="footerCopy">© 2025 Neo AI. Mọi quyền được bảo lưu.</span>
-        <span data-i18n="footerMadeWith">Được tạo với ❤️ tại Việt Nam</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Simple fade in
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelector('.privacy-container').style.opacity = 1;
-    });
-  </script>
-</body>
-</html>
+console.log('Split pages successfully!');
