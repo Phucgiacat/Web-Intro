@@ -35,9 +35,9 @@
       box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     }
     .privacy-header {
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--border-light);
-      padding-bottom: 20px;
+      margin-bottom: 8px;
+      border-bottom: none;
+      padding-bottom: 0;
     }
     .privacy-layout {
       display: block;
@@ -59,7 +59,7 @@
     
     .privacy-container h1 {
       font-size: 2.2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0;
       color: var(--text-primary);
       font-family: 'Satoshi', sans-serif;
       text-align: center;
@@ -67,8 +67,8 @@
     }
     .privacy-container h2 {
       font-size: 1.35rem;
-      margin-top: 2rem;
-      margin-bottom: 0.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
       color: var(--accent-secondary);
       border-bottom: 1px solid var(--border-light);
       padding-bottom: 0.4rem;
@@ -80,9 +80,7 @@
       margin-bottom: 0.5rem;
       color: var(--text-primary);
     }
-    .policy-section:first-child h2 {
-      margin-top: 0.5rem;
-    }
+    
     .privacy-container p {
       margin-bottom: 0.75rem;
       line-height: 1.7;
@@ -113,7 +111,14 @@
       color: var(--text-primary);
       font-weight: 600;
     }
+    .privacy-content {
+      max-width: 100%;
+      margin: 0 auto;
+    }
 
+    .policy-section:first-child h2 {
+      margin-top: 0;
+    }
     @media (max-width: 768px) {
       .privacy-container {
         padding: 24px 20px;
