@@ -685,36 +685,45 @@
   </section>
 
   <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer__grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        
         <div class="footer__col">
-          <a href="#hero" class="nav__logo" style="margin-bottom: var(--space-sm);">
+          <a href="/index.html#hero" class="nav__logo" style="margin-bottom: var(--space-sm);">
             <div class="logo-mask">NEO AI</div>
           </a>
-          <p class="footer__brand-desc" data-i18n="footerDesc">Nền tảng AI đa mô hình, thiết kế cho người Việt.</p>
+          <div class="footer__col-title">Về Neo AI</div>
+          <a href="/index.html#features">Giới thiệu</a>
+          <a href="/index.html#contact">Liên hệ</a>
+          <a href="#company-info">Thông tin pháp lý & Chủ sở hữu</a>
         </div>
+
         <div class="footer__col">
-          <div class="footer__col-title" data-i18n="footerProduct">Sản phẩm</div>
-          <a href="#features" data-i18n="navFeatures">Tính năng</a>
-          <a href="#models" data-i18n="navModels">Mô hình AI</a>
-          <a href="#pricing" data-i18n="navPricing">Bảng giá</a>
-          <a href="#demo" data-i18n="navDemo">Demo</a>
+          <div class="footer__col-title">Chính sách & Điều khoản</div>
+          <a href="/terms.html">Điều khoản Dịch vụ</a>
+          <a href="/privacy.html">Chính sách Bảo mật</a>
+          <a href="/terms.html#payment">Chính sách Thanh toán</a>
+          <a href="/terms.html#delivery">Chính sách Bàn giao & Kích hoạt</a>
+          <a href="/terms.html#refund">Chính sách Hoàn tiền</a>
         </div>
+
         <div class="footer__col">
-          <div class="footer__col-title">Về chúng tôi</div>
-          <a href="#about" data-i18n="footerCompany">Thông tin công ty</a>
-          <a href="/privacy.html">Chính sách bảo mật</a>
+          <div class="footer__col-title">Hỗ trợ Khách hàng</div>
+          <a href="/index.html#contact">Trung tâm Hỗ trợ</a>
+          <a href="/index.html#faq">Câu hỏi Thường gặp (FAQs)</a>
         </div>
-        <div class="footer__col" style="grid-column: span 2;">
-          <div class="footer__col-title">Thông tin liên hệ</div>
+
+        <div class="footer__col" id="company-info" style="grid-column: 1 / -1; margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
+          <div class="footer__col-title">Thông tin pháp lý & Chủ sở hữu Website</div>
           <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.8; margin-bottom: 12px;">
-            <strong style="color: #fff;">CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</strong><br>
-            <strong>Địa chỉ:</strong> Số nhà 9 - Tổ 8 - Khu 1 , Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng
-            Ninh, Việt Nam.<br>
-            <strong>CEO:</strong> Đỗ Văn Trung<br>
-            <strong>Email:</strong> contact@neoai.vn<br>
+            <strong style="color: #fff;">Tên công ty: CÔNG TY TNHH ĐẦU TƯ & KINH DOANH TRUNG VIỆT</strong><br>
+            <strong>Mã số doanh nghiệp:</strong> 5702059081<br>
+            <strong>Người đại diện theo pháp luật:</strong> ĐỖ VĂN TRUNG<br>
+            <strong>Địa chỉ trụ sở:</strong> Số nhà 9, Tổ 8, Khu 1, Phường Trần Hưng Đạo, Thành Phố Hạ Long, Tỉnh Quảng Ninh, Việt Nam<br>
+            <strong>Email hỗ trợ:</strong> contact@neoai.ai.vn ( contact@neoai.io.vn )<br>
             <strong>Hotline:</strong> (+84) 835108363<br>
+            <strong>Giấy chứng nhận đăng ký doanh nghiệp:</strong> SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH QUẢNG NINH - CẤP NGÀY 22 THÁNG 09 NĂM 2020<br>
           </p>
           <div style="display: flex; gap: 12px;">
             <a href="#">Facebook</a>
@@ -722,6 +731,7 @@
             <a href="#">Twitter</a>
           </div>
         </div>
+
       </div>
       <div class="footer__bottom">
         <span data-i18n="footerCopy">© 2025 Neo AI. Mọi quyền được bảo lưu.</span>
